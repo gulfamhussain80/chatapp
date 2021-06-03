@@ -1,5 +1,10 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
+task wrapper(type: Wrapper) {
+    gradleVersion = '6.7.1'
+}
+task prepareKotlinBuildScriptModel {
+}
 
 android {
     compileSdkVersion 30
@@ -8,7 +13,7 @@ android {
     defaultConfig {
         applicationId "com.example.mid_term_exam"
         minSdkVersion 26
-        targetSdkVersion 30
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
@@ -31,11 +36,16 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'com.google.firebase:firebase-auth:20.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.firebaseui:firebase-ui-auth:6.4.0'
+    implementation 'com.github.stfalcon-studio:Chatkit:0.4.1'
+    implementation "androidx.recyclerview:recyclerview:1.2.0"
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.firebase:firebase-firestore:22.1.2'
 
 }

@@ -5,6 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <com.stfalcon.chatkit.dialogs.DialogsList
+        android:id="@+id/chat_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 
 
     <TextView

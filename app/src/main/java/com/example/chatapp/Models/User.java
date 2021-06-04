@@ -1,3 +1,4 @@
+
 package com.example.chatapp.Models;
 
 import com.google.firebase.auth.FirebaseUser;
@@ -35,7 +36,8 @@ public class User implements IUser {
             user.avatar="";
         }
 
-      return user;
+        return user;
     }
 
 }
+

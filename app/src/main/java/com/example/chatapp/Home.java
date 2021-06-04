@@ -1,19 +1,17 @@
 package com.example.chatapp;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.chatapp.Models.Dialogs;
 import com.example.chatapp.Models.Message;
@@ -30,17 +28,14 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.squareup.picasso.Picasso;
 import com.stfalcon.chatkit.commons.ImageLoader;
-import com.stfalcon.chatkit.commons.models.IUser;
 import com.stfalcon.chatkit.dialogs.DialogsList;
 import com.stfalcon.chatkit.dialogs.DialogsListAdapter;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Home extends AppCompatActivity {
 
-    private TextView textViewResults;
+
     DialogsList dialogsList;
     FirebaseFirestore firestore = FirebaseFirestore.getInstance();
     ArrayList<Dialogs> dialogsArrayList = new ArrayList<Dialogs>();
@@ -49,10 +44,7 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-        textViewResults = findViewById(R.id.text_view_result);
         dialogsList = (DialogsList)findViewById(R.id.chat_dialog);
-
         DialogsListAdapter dialogsListAdapter = new DialogsListAdapter<Dialogs>(new ImageLoader() {
             @Override
             public void loadImage(ImageView imageView,@Nullable String url, @Nullable Object payload) {

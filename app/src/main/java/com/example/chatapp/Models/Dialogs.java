@@ -5,12 +5,6 @@ import com.stfalcon.chatkit.commons.models.IDialog;
 import com.stfalcon.chatkit.commons.models.IMessage;
 
 import java.util.ArrayList;
-
-import com.stfalcon.chatkit.commons.models.IDialog;
-import com.stfalcon.chatkit.commons.models.IMessage;
-import com.stfalcon.chatkit.commons.models.IUser;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +14,7 @@ public class Dialogs implements IDialog {
     private String id;
     private String dialogPhoto;
     private String dialogName;
-    private ArrayList<IUser> users = new ArrayList<IUser>();
+    private ArrayList<User> users = new ArrayList<User>();
 
     private Message lastMessage;
 
@@ -62,9 +56,9 @@ public class Dialogs implements IDialog {
     }
 
     @Override
-    //@Exclude
-    public ArrayList<IUser> getUsers() {
-        return users;
+    @Exclude
+    public ArrayList<User> getUsers() {
+        return this.users;
     }
 
     @Override

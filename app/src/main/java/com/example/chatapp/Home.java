@@ -2,6 +2,7 @@ package com.example.chatapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -12,6 +13,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.chatapp.Models.Dialogs;
 import com.example.chatapp.Models.Message;
@@ -31,6 +34,7 @@ import com.stfalcon.chatkit.commons.ImageLoader;
 import com.stfalcon.chatkit.dialogs.DialogsList;
 import com.stfalcon.chatkit.dialogs.DialogsListAdapter;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Home extends AppCompatActivity {
@@ -95,6 +99,9 @@ public class Home extends AppCompatActivity {
                                Dialogs  dialogs= document.toObject(Dialogs.class);
                                 DialogsListAdapter dialogsListAdapter = (DialogsListAdapter) dialogsList.getAdapter();
                                 dialogsListAdapter.addItem(dialogs);
+                                onclick(dialogsListAdapter);
+
+
 
                             }
                         } else {
@@ -103,7 +110,26 @@ public class Home extends AppCompatActivity {
                     }
                 });
     }
+    public void onclick( DialogsListAdapter dialogsListAdapter){
+        dialogsListAdapter.setOnDialogClickListener(new DialogsListAdapter.OnDialogClickListener<Dialogs>() {
+            @Override
+            public void onDialogClick(Dialogs dialog) {
+                //On item click action
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction transaction = fragmentManager.beginTransaction();
+                transaction.setReorderingAllowed(true);
+                Bundle bundle = new Bundle();
+                 int i =dialog.getUnreadCount();
+                Log.d("COUNT", String.valueOf(i));
+                bundle.putParcelable("dialogs", dialog);
+                transaction.replace(R.id.fragment_container, Messages.class, bundle);
 
+                transaction.commit();
+
+            }
+        });
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

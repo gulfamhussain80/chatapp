@@ -1,5 +1,8 @@
 package com.example.chatapp.Models;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.firebase.firestore.Exclude;
 import com.stfalcon.chatkit.commons.models.IDialog;
 import com.stfalcon.chatkit.commons.models.IMessage;
@@ -9,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class Dialogs implements IDialog {
+public class Dialogs implements IDialog, Parcelable {
 
     private String id;
     private String dialogPhoto;
@@ -37,7 +40,8 @@ public class Dialogs implements IDialog {
         this.dialogPhoto = "";
         this.users.add(message.user);
         this.lastMessage=message;
-        this.unreadCount=0;
+        this.dialogName= message.text;
+        this.unreadCount=3;
     }
 
     @Override
@@ -90,6 +94,16 @@ public class Dialogs implements IDialog {
         hashMap.put("unreadCount",unreadCount);
         return  hashMap;
 
+
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
 
     }
 }

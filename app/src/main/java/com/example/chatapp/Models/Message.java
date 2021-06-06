@@ -1,21 +1,26 @@
 package com.example.chatapp.Models;
 
+import com.google.firebase.firestore.Exclude;
 import com.stfalcon.chatkit.commons.models.IMessage;
 import com.stfalcon.chatkit.commons.models.IUser;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Message implements IMessage {
+public class Message implements IMessage, Serializable {
 
-     String id;
+    String id;
     String text;
-    User user;
+    User author;
     Date createdAt;
+    public Message(){
+
+    }
     public Message(String text, User user){
         this.text=text;
-        this.user=user;
+        this.author=user;
         this.createdAt =new Date();
     }
 
@@ -30,8 +35,13 @@ public class Message implements IMessage {
     }
 
     @Override
+    @Exclude
     public IUser getUser() {
-        return user;
+        return author;
+    }
+
+    public User getAuthor() {
+        return author;
     }
 
     @Override
@@ -42,7 +52,7 @@ public class Message implements IMessage {
     {
         Map<String,Object> hashMap = new HashMap<>();
         hashMap.put("text",text);
-        hashMap.put("user",user);
+        hashMap.put("author",author);
         hashMap.put("createdAt",createdAt);
         return hashMap;
 

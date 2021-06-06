@@ -26,6 +26,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -36,6 +37,7 @@ import com.stfalcon.chatkit.dialogs.DialogsListAdapter;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Map;
 
 public class Home extends AppCompatActivity {
 
@@ -59,8 +61,8 @@ public class Home extends AppCompatActivity {
         dialogsList.setAdapter(dialogsListAdapter);
 
 
-     //AddDialog();
-     getDialogsList();
+       AddDialog();
+     //getDialogsList();
      //dialogsListAdapter.setItems(dialogsArrayList);
 
 
@@ -88,6 +90,7 @@ public class Home extends AppCompatActivity {
     }
     private void getDialogsList() {
 
+
         firestore.collection("Dialogs")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -96,13 +99,12 @@ public class Home extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Log.d("Chat List", document.getId() + " => " + document.getData());
-                               Dialogs  dialogs= document.toObject(Dialogs.class);
+                               Dialogs  dialogs=document.toObject(Dialogs.class);
+
                                 DialogsListAdapter dialogsListAdapter = (DialogsListAdapter) dialogsList.getAdapter();
                                 dialogsListAdapter.addItem(dialogs);
-                                onclick(dialogsListAdapter);
-
-
-
+                                //onclick(dialogsListAdapter);
+                                dialogs.getUnreadCount();
                             }
                         } else {
                             Log.d("Chat List", "Error getting documents: ", task.getException());
@@ -118,11 +120,13 @@ public class Home extends AppCompatActivity {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
                 transaction.setReorderingAllowed(true);
-                Bundle bundle = new Bundle();
-                 int i =dialog.getUnreadCount();
-                Log.d("COUNT", String.valueOf(i));
-                bundle.putParcelable("dialogs", dialog);
-                transaction.replace(R.id.fragment_container, Messages.class, bundle);
+              //  Bundle bundle = new Bundle();
+//                String i =dialog.getLastMessage().getText();
+//                Log.d("COUNT", String.valueOf(i));
+               // bundle.putParcelable("dialogs", dialog);
+                //dialog.getLastMessage().getText();
+
+                transaction.replace(R.id.fragment_container, Messages.class, null);
 
                 transaction.commit();
 

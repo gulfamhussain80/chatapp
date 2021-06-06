@@ -64,14 +64,15 @@ public class Messages extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        Dialogs dialogs = requireArguments().getParcelable("dialogs");
+        //Dialogs dialogs = requireArguments().getParcelable("dialogs");
+        User user = User.UserfromFirebaseUser(FirebaseAuth.getInstance().getCurrentUser());
+        Message message = new Message("Hi there!",user);
         View view= inflater.inflate(R.layout.fragment_messages, container, false);
         messagesList = (MessagesList) view.findViewById(R.id.messagesList);
         MessagesListAdapter<Message> adapter = new MessagesListAdapter<>(FirebaseAuth.getInstance().getCurrentUser().getUid(), null);
         messagesList.setAdapter(adapter);
-        boolean scroll = true;
-
-        adapter.addToStart(dialogs.getLastMessage(), scroll);
+        //boolean Scroll = true
+        adapter.addToStart(message, true);
         return  view;
     }
 }

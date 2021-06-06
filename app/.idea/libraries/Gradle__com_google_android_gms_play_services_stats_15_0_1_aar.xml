@@ -1,9 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-stats:15.0.1@aar">
     <CLASSES>
+      <root url="jar://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/624d70cc999a6ceb1076640f75087662/jetified-play-services-stats-15.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/624d70cc999a6ceb1076640f75087662/jetified-play-services-stats-15.0.1/res" />
+      <root url="file://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/624d70cc999a6ceb1076640f75087662/jetified-play-services-stats-15.0.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/624d70cc999a6ceb1076640f75087662/jetified-play-services-stats-15.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/624d70cc999a6ceb1076640f75087662/jetified-play-services-stats-15.0.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/624d70cc999a6ceb1076640f75087662/jetified-play-services-stats-15.0.1/res" />
       <root url="jar://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/624d70cc999a6ceb1076640f75087662/jetified-play-services-stats-15.0.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/624d70cc999a6ceb1076640f75087662/jetified-play-services-stats-15.0.1/res" />
       <root url="file://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/624d70cc999a6ceb1076640f75087662/jetified-play-services-stats-15.0.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/624d70cc999a6ceb1076640f75087662/jetified-play-services-stats-15.0.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -1,15 +1,25 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.print:print:1.0.0@aar">
     <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/res" />
+      <root url="file://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/054771990b3a2b41ea1609fedabb7c78/print-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="jar://$USER_HOME$/6th semester/Mobile Computing/second app/caches/modules-2/files-2.1/androidx.print/print/1.0.0/71fc2d9acf7cce6b96230c5af263268b1664914a/print-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/modules-2/files-2.1/androidx.print/print/1.0.0/71fc2d9acf7cce6b96230c5af263268b1664914a/print-1.0.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/modules-2/files-2.1/androidx.print/print/1.0.0/71fc2d9acf7cce6b96230c5af263268b1664914a/print-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>

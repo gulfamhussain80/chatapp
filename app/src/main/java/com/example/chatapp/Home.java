@@ -61,8 +61,8 @@ public class Home extends AppCompatActivity {
         dialogsList.setAdapter(dialogsListAdapter);
 
 
-       AddDialog();
-     //getDialogsList();
+       //AddDialog();
+     getDialogsList();
      //dialogsListAdapter.setItems(dialogsArrayList);
 
 
@@ -103,8 +103,7 @@ public class Home extends AppCompatActivity {
 
                                 DialogsListAdapter dialogsListAdapter = (DialogsListAdapter) dialogsList.getAdapter();
                                 dialogsListAdapter.addItem(dialogs);
-                                //onclick(dialogsListAdapter);
-                                dialogs.getUnreadCount();
+                                onclick(dialogsListAdapter);
                             }
                         } else {
                             Log.d("Chat List", "Error getting documents: ", task.getException());
@@ -117,18 +116,11 @@ public class Home extends AppCompatActivity {
             @Override
             public void onDialogClick(Dialogs dialog) {
                 //On item click action
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction transaction = fragmentManager.beginTransaction();
-                transaction.setReorderingAllowed(true);
-              //  Bundle bundle = new Bundle();
-//                String i =dialog.getLastMessage().getText();
-//                Log.d("COUNT", String.valueOf(i));
-               // bundle.putParcelable("dialogs", dialog);
-                //dialog.getLastMessage().getText();
+                Intent i = new Intent(Home.this, MessagesDisplay.class);
+                i.putExtra("Dialogs",dialog);
+                startActivity(i);
+                finish();
 
-                transaction.replace(R.id.fragment_container, Messages.class, null);
-
-                transaction.commit();
 
             }
         });

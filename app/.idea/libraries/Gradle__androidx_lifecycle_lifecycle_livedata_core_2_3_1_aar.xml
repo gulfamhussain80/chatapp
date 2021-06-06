@@ -1,12 +1,20 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.3.1@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/d35f972dad949778d89e411dd04d0ce0/lifecycle-livedata-core-2.3.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/d35f972dad949778d89e411dd04d0ce0/lifecycle-livedata-core-2.3.1/res" />
+      <root url="jar://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/d35f972dad949778d89e411dd04d0ce0/lifecycle-livedata-core-2.3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/d35f972dad949778d89e411dd04d0ce0/lifecycle-livedata-core-2.3.1/res" />
+      <root url="file://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/d35f972dad949778d89e411dd04d0ce0/lifecycle-livedata-core-2.3.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/d35f972dad949778d89e411dd04d0ce0/lifecycle-livedata-core-2.3.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/d35f972dad949778d89e411dd04d0ce0/lifecycle-livedata-core-2.3.1/res" />
+      <root url="jar://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/d35f972dad949778d89e411dd04d0ce0/lifecycle-livedata-core-2.3.1/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/d35f972dad949778d89e411dd04d0ce0/lifecycle-livedata-core-2.3.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/d35f972dad949778d89e411dd04d0ce0/lifecycle-livedata-core-2.3.1/res" />
+      <root url="jar://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/d35f972dad949778d89e411dd04d0ce0/lifecycle-livedata-core-2.3.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="jar://$USER_HOME$/6th semester/Mobile Computing/second app/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.3.1/38ecd5651d87b6db994df01f93fc72d6e59b846a/lifecycle-livedata-core-2.3.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.3.1/38ecd5651d87b6db994df01f93fc72d6e59b846a/lifecycle-livedata-core-2.3.1-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.3.1/38ecd5651d87b6db994df01f93fc72d6e59b846a/lifecycle-livedata-core-2.3.1-sources.jar!/" />
     </SOURCES>
   </library>

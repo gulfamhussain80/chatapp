@@ -1,14 +1,24 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-firestore:22.1.2@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/2d46f4b6755e6c4dea717b2a8cb07c28/jetified-firebase-firestore-22.1.2/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/2d46f4b6755e6c4dea717b2a8cb07c28/jetified-firebase-firestore-22.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/2d46f4b6755e6c4dea717b2a8cb07c28/jetified-firebase-firestore-22.1.2/res" />
+      <root url="file://$USER_HOME$/6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/2d46f4b6755e6c4dea717b2a8cb07c28/jetified-firebase-firestore-22.1.2/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/2d46f4b6755e6c4dea717b2a8cb07c28/jetified-firebase-firestore-22.1.2/res" />
+      <root url="jar://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/2d46f4b6755e6c4dea717b2a8cb07c28/jetified-firebase-firestore-22.1.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/2d46f4b6755e6c4dea717b2a8cb07c28/jetified-firebase-firestore-22.1.2/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/2d46f4b6755e6c4dea717b2a8cb07c28/jetified-firebase-firestore-22.1.2/res" />
+      <root url="jar://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/2d46f4b6755e6c4dea717b2a8cb07c28/jetified-firebase-firestore-22.1.2/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/transforms-2/files-2.1/2d46f4b6755e6c4dea717b2a8cb07c28/jetified-firebase-firestore-22.1.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
+      <root url="jar://$USER_HOME$/6th semester/Mobile Computing/second app/caches/modules-2/files-2.1/com.google.firebase/firebase-firestore/22.1.2/ed7305df6401c5d56db3ed73e13c770f78859284/firebase-firestore-22.1.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/modules-2/files-2.1/com.google.firebase/firebase-firestore/22.1.2/ed7305df6401c5d56db3ed73e13c770f78859284/firebase-firestore-22.1.2-javadoc.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/modules-2/files-2.1/com.google.firebase/firebase-firestore/22.1.2/ed7305df6401c5d56db3ed73e13c770f78859284/firebase-firestore-22.1.2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+      <root url="jar://$USER_HOME$/6th semester/Mobile Computing/second app/caches/modules-2/files-2.1/com.google.firebase/firebase-firestore/22.1.2/41fefdaefd1884493fff6bad5ccd20b03190c386/firebase-firestore-22.1.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../6th semester/Mobile Computing/second app/caches/modules-2/files-2.1/com.google.firebase/firebase-firestore/22.1.2/41fefdaefd1884493fff6bad5ccd20b03190c386/firebase-firestore-22.1.2-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../6th semester/Mobile Computing/second app/caches/modules-2/files-2.1/com.google.firebase/firebase-firestore/22.1.2/41fefdaefd1884493fff6bad5ccd20b03190c386/firebase-firestore-22.1.2-sources.jar!/" />
     </SOURCES>
   </library>

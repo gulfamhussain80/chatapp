@@ -4,7 +4,9 @@ package com.example.chatapp.Models;
 import com.google.firebase.auth.FirebaseUser;
 import com.stfalcon.chatkit.commons.models.IUser;
 
-public class User implements IUser {
+import java.io.Serializable;
+
+public class User implements IUser, Serializable {
 
     String id;
     String name;

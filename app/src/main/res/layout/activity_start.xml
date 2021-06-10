@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/favcol"
+    tools:context=".StartActivity">
+
+    <TextView
+        android:id="@+id/textViewStartActivity"
+        android:layout_width="271dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="128dp"
+        android:text="Project: Chatapp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginActivityButton"
+        android:layout_width="303dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="104dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStartActivity" />
+
+    <Button
+        android:id="@+id/signupActivityButton"
+        android:layout_width="303dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="52dp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginActivityButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
